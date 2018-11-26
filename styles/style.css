@@ -1,0 +1,121 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #052641;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+
+/* Title */
+
+#title {
+  color: #196D53;
+  text-align: center;
+  margin: 35px 0;
+}
+
+
+/* Dropdown selector */
+
+.selector {
+  display: flex;
+  align-items: center;
+}
+
+.selector .selection #displaying {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.selector .selection #current {
+  font-size: 18px;
+  color: #EB8F4D;
+  padding-left: 7px;
+  cursor: pointer;
+}
+
+.selector .selection ul {
+  position: absolute;
+  display: none;
+  list-style: none;
+  background: #052641;
+  border: 1px solid #EB8F4D;
+}
+
+.selector .selection ul li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.selector .selection:hover > ul {
+  display: block;
+}
+
+.selector .selection ul li:hover {
+  background: #196D53;
+}
+
+
+/* Bar chart */
+
+.bar-chart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 0;
+}
+
+.bar-chart .names {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.bar-chart .names .name {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.bar-chart .bars {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1px solid #fff;
+  width: 50%;
+}
+
+.bar-chart .bars .bar {
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #196D53;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.bar-chart .bars .bar #value {
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 10px;
+}
